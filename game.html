@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maze world</title>
+        <link rel = "icon" href ="assets/icon-maze.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/divison-window.css">
+        <link rel="stylesheet" href="style/settings-window.css">
+        <link rel="stylesheet" href="style/theme.css">
+        <link rel="stylesheet" href="style/loader.css">
+        <link rel="stylesheet" href="style/ratings.css">
+        <link rel="stylesheet" href="style/nav-button.css">
+        <link rel="stylesheet" href="style/help.css">
+        <link rel="stylesheet" href="style/login.css">
+        <link rel="stylesheet" href="style/about-us.css">
+        <link rel="stylesheet" href="style/game.css">
+    </head>
+    <body onload="loading()">
+        <div>
+            <!-- 0  background animated-->
+                <div class="background" id="background-animated" style="z-index:0;">
+                    <audio id="audio" autoplay loop= 'true' muted>
+                        <source src="assets/music/computer-love-121106.mp3" type="audio/mp3">
+                    </audio>
+                        <iframe id="background-page" src="animation/autumn/index.html" width="100%" height="100%" style="position: absolute;">
+                        </iframe>       
+                </div>
+            <!-- 1 niveau  + control -->
+                <div class="window controle-game" id="controle-game" style="z-index:1;">
+                    <h1 class="title-window" id="niveau"></h1>
+                </div>
+                <div class="window controle-game2" id="controle-game2" style="z-index:1;">
+                    <div class="game-btn" id="btn-controle-game2">
+                        <button id="b1" class='btn-controle-game' type="button" title="play/pause"><i class="fa fa-pause" id="play-pause" aria-hidden="true" onclick="playPauseGame()"  data-play="false"></i></button>    <!--Continue-->
+                        <button id="b2"  type="button" class='btn-controle-game' title="Restart" onclick="RestartGame()"><i class="fa fa-undo" aria-hidden="true"></i></button>     <!--Restart-->
+                        <button id="b3"  type="button" class='btn-controle-game' title="leave" onclick="leaveGame()"><i class="fa fa-sign-out" aria-hidden="true"></i> </button>     <!--Leave-->
+                    </div>
+                    <div>
+                        <div id="score"></div>
+                        <div id="chronometre"> 
+                            <div style="text-align: center; color: red;font-weight: bold;">You have <span id="total-time"></span> seconds in this level</div>
+                            <div class="time">
+                                <span id="timespan"  style="width: 100%;"></span>
+                            </div>
+                            <div style="text-align: center; color: red;font-weight: bold;" >
+                                00:<span id="time"></span>
+                            </div>
+                        </div>
+                        <div id="message" style="text-align: center; color: red;font-weight: bold;"></div>
+                    </div>
+                </div>    
+            <!-- 2  game-->
+                <div class="window game" id="game" style="z-index:2;">
+                    <div class="content">
+                        <div class="container-game">
+                            <p id="startImage" style="display: none;"></p>
+                            <p id="startImage2" style="display: none;"></p>
+                            <p id="endImage" style="display: none;"></p>
+                            <p id="winImage" style="display: none;"></p>
+                            <table id="table"></table>
+                        </div>
+                    </div>
+                </div>
+            <!-- 3 result-->
+                <div class="window result-win" id="result-win" style="z-index:3;display:none;">
+                    <div class="content">
+                        <h1 class="title-window">Win</h1>
+                        <div>
+                            <img src="assets/win.PNG" alt="result-img" id="result-img" class="result-img">                 
+                        </div>
+                        <button class="button-window" type="button" onclick="nextLevel()">Next level</button>
+                        <button class="button-window" type="button" onclick="leaveGameAfterLoseWin()">Leave</button>
+                    </div>
+                </div>
+                <div class="window result-lose" id="result-lose" style="z-index:3;display:none;">
+                    <div class="content">
+                        <h1 class="title-window">Lose</h1>
+                        <div>
+                            <img src="assets/lose.PNG" alt="result-img" id="lose-img" class="result-img"> 
+                        </div>
+                        <button class="button-window" type="button" onclick="leaveGameAfterLoseWin()">Leave</button>
+                    </div>
+                </div>
+            <!-- 4 level-->
+                <div class="window level" id="level" style="z-index:4;display:none;">
+                    <div class="content">
+                        <h1 class="title-window">level</h1>
+                        <h1 class="title-window" id="level-nbr">1</h1>
+                    </div>
+                </div>
+            <!-- 5 close game-->
+                <div class="window close-window" id="close-window" style="z-index:5; display:none;">
+                    <div class="content">
+                        <h1 class="title-window">close-window</h1>
+                        <p>Are you sure you want to leave the game?</p>            
+                        <div>
+                            <button class="button-window" type="button" onclick="closeLeaveWindow()">Cancel</button>
+                            <button class="button-window" type="button" onclick="confirmLeaveWindow()">Confirm</button>
+                        </div>
+                    </div>   
+                </div>
+            <!-- 6 menu -->
+                <div class="window menu" id="menu" style="z-index:6;">
+                    <div class="content-menu">
+                        <h1 class="title-window">Menu</h1>
+
+                            <div class="center-menu">
+                                <button type="button" onclick="startGame('easy')">Easy</button>
+                                <button type="button" onclick="startGame('medium')">Medium</button>
+                                <button type="button" onclick="startGame('difficult')">Difficult</button>
+                            </div>                
+                    </div>      
+                </div>
+            <!--7 theme-->
+                <div class="window theme" id="theme" style="z-index:7;">
+                        <img src="assets/theme.PNG" alt="theme-img" class="back-img">
+                        <div class="content">
+                            <h1 class="title-window">Select your favoriate theme</h1>
+                            <div class="center-theme">
+                                <div class="carousel">
+                                    <div class="carousel-cards">
+                                        <div class="carousel-card" onclick="imageTheme('autumn');">
+                                            <img class="carousel-img" src="assets/theme/autumn.PNG" alt="autumn"/>
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('spring');">
+                                            <img class="carousel-img" src="assets/theme/spring.PNG" alt="spring"/>
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('summer');">
+                                            <img class="carousel-img" src="assets/theme/summer.PNG" alt="summer"/>
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('winter');">
+                                            <img class="carousel-img" src="assets/theme/winter.PNG" alt="winter"/>    
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('christmas');">
+                                            <img class="carousel-img" src="assets/theme/christmas.jpg" alt="christmas">
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('newYear');">
+                                            <img class="carousel-img" src="assets/theme/new-year.jpg" alt="new-year">
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('halloween');">
+                                            <img class="carousel-img" src="assets/theme/halloween.jpg" alt="halloween">
+                                        </div>
+                                        <div class="carousel-card" onclick="imageTheme('diwali');">
+                                            <img class="carousel-img" src="assets/theme/diwali.jpg" alt="diwali">
+                                        </div>
+                                
+                                    </div>
+                                </div>                       
+                            </div>      
+                            <div class="carousel-button">
+                                <button type="button" class="carousel-btn carousel-btn-back" >&#8678;</button>
+                                <button type="button" class="carousel-btn carousel-btn-next">&#8680;</button>
+                            </div>       
+                        </div>    
+                
+                </div>
+            <!-- 8 nav icon -->
+                <div class="window nav" id="nav" style="z-index:8;">
+                        <div class="badge-icon" id="badge-icon" style="display:none;" onclick="openLogin()">
+                                <img src="assets/avatar/default.jpeg" alt=""  id="res-nav" class="res-nav">
+                                <span id="login-name">Anonymous</span> 
+                        </div>
+                        <div class="nav-btn">
+                            <button type="button" onclick="openSetting()" title="setting"><i class="fa fa-cogs" aria-hidden="true"></i></button>
+                            <button type="button" onclick="openAboutUs()" title="about-us"><i class="fa fa-users" aria-hidden="true"></i></button>
+                            <button type="button" onclick="openHelp()" title="help"><i class="fa fa-question-circle" aria-hidden="true"></i></button>                    
+                            <button type="button" onclick="openRating()" title="rating"><i class="fa fa-star" aria-hidden="true"></i>
+                            </button>                    
+                        </div>
+                        <p id="theme-type" style="display: none;"></p>
+                        <p id="game-type" style="display: none;"></p>
+                </div>
+            <!--9 rating -->
+                <div class="window rating" id="rating" style="z-index:9;display:none;">
+                    <div class="content">
+                        <h1 class="title-window">Rate our game</h1>
+                        <div class="container-rating">
+                            <div>
+                                <p class="sec-title-window">You like the game?</p>
+                                <div class="stars rating-container">
+                                    <a>★</a>
+                                    <a>★</a>
+                                    <a>★</a>
+                                    <a>★</a>
+                                    <a>★</a>    
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p class="sec-title-window">What can we do to improve?</p>
+                                <textarea name="commentaire" id="commentaire"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="rate-button button" onclick="closeRating()">Confirm</button>
+                    </div>   
+                
+                </div>
+            <!-- 10 setting -->
+                <div class="window setting" id="setting" style="z-index:10;display: none;">
+                    <div class="titlebar">
+                        <span class="close" onclick="closeSetting()">X</span>
+                    </div> 
+                    <div class="content-setting">
+                        <h1 class="title-window">Setting</h1>
+                        <h2 class="sec-title-window">Choose color :</h2>
+                        <ul class="color-grid">
+                            <li class="color-option is-selected" data-color="#5e07b5"></li>
+                            <li class="color-option" data-color="#b01f8e"></li>
+                            <li class="color-option" data-color="#dc5304"></li>
+                            <li class="color-option" data-color="#de5d00"></li>
+                            <li class="color-option" data-color="#00225D"></li>
+                            <li class="color-option" data-color="#003FAC"></li>
+                            <li class="color-option" data-color="#B20404"></li>
+                            <li class="color-option" data-color="#E44545"></li>
+                            <li class="color-option" data-color="#DA3E00"></li>
+                            <li class="color-option" data-color="#FF8C09"></li>
+                            <li class="color-option" data-color="#f7eb01"></li>
+                            <li class="color-option" data-color="#1BB300"></li>
+                        </ul>
+                        <h2 class="sec-title-window">Music: </h2>
+                        <div class="setting-sound-btn">
+                            <button type="button" onclick="startMusic()"><i class="fa fa-volume-off" id="music"></i></button>                
+                        </div>
+                    </div>   
+                
+                </div>
+            <!-- 11 help -->
+                <div class="window help" id="help" style="z-index:11; display: none;">
+                    <button type="button" class="close-help" onclick="closeHelp()">X</button>
+                    <div class="content" >
+                        <div class="book">
+                        <div id="pages" class="pages">
+                            <div class="page">1 
+                                <h1>Help Book :</h1>
+                                <p>Open Me, <br>please!</p>
+                                <img src="assets/help.png" alt="help" class="help-img">
+                            </div>
+
+                            <div class="page">2
+                                <h1> 1- Easy: </h1> 
+                                <p>You just need to find your way out of the maze. </p>
+                            </div>
+
+                            <div class="page">3
+                                <h1> 2- Medium:  </h1>
+                                <p>
+                                    You're gonna find items in your way that if you collect may increase your remaining time , give you gold coins 
+                                    or even decrease your gold coins balance .      
+                                </p>
+                                <ul>
+                                    <li>
+                                        <h2> Bonuses :</h2>
+                                        <p>If you collect:</p>
+                                        <p>
+                                            - <img style="width:30px ; height:30px;" src="assets/icon/tresor.PNG" class="icon-help">
+                                            You win  <span style="font-weight:bold;" >5 gold coins.</span> 
+                                        </p>
+                                        <p>
+                                            - <img style="width:30px; height:30px;" src="assets/icon/horloge.jpg" class="icon-help">
+                                            <span style="font-weight: bold;"> 5 seconds </span> are added to your remaining time. 
+                                        </p> 
+                                </li> 
+                                </ul>
+                            </div>
+
+                            <div class="page">4
+                                <ul>
+                                <li>
+                                        <h2>Villain items :</h2>
+                                        <p>If you collect:</p>
+                                        <p>
+                                            - <img style="width:30px ; height:30px;" src="assets/icon/perdre-piece.PNG" class="icon-help">
+                                            You lose  <span style="font-weight:bold;" >3 gold coins.</span>      
+                                        </p>
+                                        <p>
+                                            - <img style="width:30px; height:30px;" src="assets/icon/point.png" class="icon-help">
+                                            There are <span style="font-weight: bold;">  3 possibilites :</span>
+                                            <ul>
+                                                <li> -You gain <span style="font-weight: bold ;"> 3 gold coins  </span></li>
+                                                <li> -You lose <span style="font-weight: bold ;"> 3 gold coins  </span></li>
+                                                <li> -<span style="font-weight: bold ;text-decoration: underline;">You return back to the your initial position. </span> </li>
+                                            </ul>  
+                                        </p> 
+                                </li>
+                                </ul>   
+                            </div>
+
+                            <div class="page">5
+                                <h1> 3- Difficult:  </h1>
+                                <p> Besides the items you find in your way: </p> 
+                                <p>There are enemies<img alt="icon" style="width:30px; height:30px;" src="assets/icon/tete-mort.jpg" class="icon-help">who are trying to catch you and destroy you .
+                                </p>
+                                <p>
+                                    <span style="font-weight: bold;font-size: 30px;">Your score :</span> <br>
+                                    Your score represents the steps you made , plus a bonus if you arrive at your destination and you still have a lot of time remaining . <br > <br >
+                                    If your chronometer shows a 0 and you still didn't find your way out of the maze , the game is over and you lose the gold coins that you collected .
+                                </p>
+                            </div>
+
+                            <div class="page">6
+                                <h1>Enjoy our game !!</h1>
+                                <img src="assets/good-luck.png" alt="good luck" class="good-luck-img">
+                            </div>
+                        </div>
+                        </div>            
+                    </div>
+                </div>   
+            <!-- 12 about-us -->
+                <div class="window about-us" id="about-us" style="z-index:12; display: none;">
+                    <div class="titlebar">
+                        <span class="close" onclick="closeAboutUs();">X</span>
+                    </div>
+                    <div class="content">
+                        <h1 class="title-window">WHO ARE WE ?</h1>
+                        <p>Hi there! We are two IT engineering students at higher school of engineering "ENSIT" , registred in group A</p>
+                        <div class="img-about">
+                            <div class="container-img">
+                                <img src="assets/about-us/salma.PNG" alt="salma img" title="Salma Lafi" >
+                                <p>Salma Lafi</p>
+                            </div>
+                            <div class="container-img">
+                                <img src="assets/about-us/Rihab.jpg" alt="rihab img" title="Rihab Cherni" >
+                                <p>Rihab Cherni</p>
+                            </div>
+                        </div>
+                        <p>We developed this maze game as a web project and i hope you enjoy it . We would appreciate your feedbacks on our work !</p>
+                    </div>
+                </div>             
+            <!-- 13 login -->
+                <div class="window login" id="login-window" style="z-index:13;">
+                    <div class="titlebar">
+                        <span class="close" onclick="closeLogin();">X</span>
+                    </div>
+                    <div class="content">
+                        <h1 class="title-window">Login</h1>
+                        <h2 class="sec-title-window">Choose your avatar:</h2>
+                        <div class="avatar-container">
+                            <div class="liste-avatar">
+                                <img onClick="updateAv('assets/avatar/av1.PNG');" alt="avatar" src="assets/avatar/av1.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av2.PNG');" alt="avatar" src="assets/avatar/av2.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av3.PNG');" alt="avatar" src="assets/avatar/av3.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av4.PNG');" alt="avatar" src="assets/avatar/av4.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av5.PNG');" alt="avatar" src="assets/avatar/av5.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av6.PNG');" alt="avatar" src="assets/avatar/av6.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av7.PNG');" alt="avatar" src="assets/avatar/av7.PNG" class="avatar"/>
+                                <img onClick="updateAv('assets/avatar/av8.PNG');" alt="avatar" src="assets/avatar/av8.PNG" class="avatar"/>
+                            </div>  
+                            <div>
+                                <img src="assets/avatar/default.jpeg" alt="" id="res-login" class="res-login">
+                            </div>
+                        </div> 
+                        <div class="login-container">
+                            <h2 class="sec-title-window">Enter your name: <input type="text" name="nom" id="nom" placeholder="..."></h2>              
+                            <button type="button" onClick="Submitlogin();">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            <!-- 14 loading --> 
+                <div class="window load" id="load" style="z-index:14;">
+                    <div class="load-center" >
+                        <h1 class="title-window">Maze World</h1>
+                        <div class="loader"></div>                
+                        <h2 class="wait">Wait ...</h2>    
+                    </div> 
+                </div> 
+        </div>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/openCloseWindow.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/help.js"></script>
+        <script src="js/window.js"></script>
+        <script src="js/theme-carousel.js"></script>
+        <script src="js/randomMatriceAlgort.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/controlButtonGame.js"></script>
+        <script src="js/rating.js"></script>
+    </body>
+</html>

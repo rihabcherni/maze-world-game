@@ -1,0 +1,53 @@
+:root{
+    --main-color: rgb(19, 72, 171);
+    --window-color: #578ae1;
+    --icon-color: aliceblue;
+    --border-color: rgb(3, 14, 112);
+    --sec-border-color:rgb(166, 2, 160);
+    --white-texte-color:white;
+    --hover-color: rgb(60, 129, 255);
+    --page-help-color:#d1d1d1;
+    --page-help-border-color:rgb(135, 135, 135);
+    --first-last-page-help:#bcd151;
+    --close-btn-color:red;
+    --close-btn-color-border:white;  
+    --button-color:rgb(19, 72, 171); 
+    --button-hover-color:rgb(58, 91, 152); 
+    --button-text-color:white;
+}
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "airstrike3d";
+    src: url(../fonts/airstrike3d.ttf);
+}
+@font-face {
+    font-family: "night-machine";
+    src: url(../fonts/Night\ Machine.otf);
+}
+html,body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+button{
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    font-family:Arial, Helvetica, sans-serif; 
+    border: 3px solid white;
+    height: 50px;
+}
+button:hover{
+    background-color: var(--button-hover-color);
+}
+.start-img{
+    border:2px solid red;
+}
+.start2-img{
+    border:2px solid rgb(0, 42, 195);
+}

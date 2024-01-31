@@ -1,0 +1,38 @@
+.about-us{
+    background-color: var(--window-color);
+    height: 86%;
+    width: 65%; 
+    position: absolute;
+    top: 6%;
+    border-radius: 20px;
+    left: 15%;
+    border: 5px solid var(--border-color);
+    text-align: center; 
+}
+.about-us p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-about {
+   display: flex;
+   flex-direction:row;
+   justify-content:center;
+}
+.img-about img{
+    width: 200px;
+    height: 200px;
+    border-radius:20px;
+    border: 5px solid var(--border-color);
+}
+.container-img{
+    margin:10px 30px;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+.container-img p , .about-us h1{
+    margin:0;
+}
+.container-img p {
+    font-size: 26px;
+}
