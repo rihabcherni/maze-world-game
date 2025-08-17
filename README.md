@@ -1,9 +1,8 @@
-
 # Maze World Game
 
 A captivating web-based maze game featuring multiple difficulty levels, seasonal themes, and engaging gameplay mechanics. Navigate through challenging mazes while collecting treasures and avoiding obstacles!
 
-## 🎮 Game Features
+## Game Features
 
 ### Difficulty Levels
 - **Easy**: Simple maze navigation - find your way to the exit
@@ -20,7 +19,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - **Timer System**: Race against time to complete each level
 - **Scoring System**: Based on steps taken and remaining time
 
-## 🎨 Themes & Customization
+## Themes & Customization
 
 ### Available Themes
 - 🍂 Autumn
@@ -38,84 +37,83 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - **Background Music**: Toggle game soundtrack on/off
 - **Personalization**: Custom player names
 
-## 📸 Game Screenshots
+## Game Screenshots
 
 ### Loading Screen
-*Initial loading screen with game branding*
-![Loading Screen](screenshots/loading.PNG)
+*Initial loading screen with game branding*  
+<img src="screenshots/loading.PNG" width="70%"/>
 
 ### User Profile & Login
-![Login Interface](screenshots/login.PNG)
+<img src="screenshots/login.PNG" width="70%"/>  
 - Avatar selection gallery
 - Username customization
 - Profile management
 
-### Main Menu & Navigation
-*Main menu with difficulty selection and navigation options*
-![Main Menu](screenshots/menu.PNG)
+### Theme Selection
+<img src="screenshots/theme-selection.PNG" width="49%"/>  
+<img src="screenshots/theme-selection2.PNG" width="49%"/>  
+- Carousel-style theme browser
+- Preview images for each seasonal theme
+- Easy theme switching
 
+### Main Menu & Navigation
+*Main menu with difficulty selection and navigation options*  
+<img src="screenshots/menu.PNG" width="70%"/>
 
 ### Game Controls & Gameplay
-![Game Controls](screenshots/game-interface.PNG)
+<img src="screenshots/game-interface.PNG" width="49%"/>  
+<img src="screenshots/difficult-mode.PNG" width="49%"/>  
 - **Play/Pause**: Pause and resume gameplay
 - **Restart**: Reset current level
 - **Leave**: Exit to main menu
 - **Timer Display**: Shows remaining time and level progress
-
-![Gameplay Screenshot](screenshots/gameplay.PNG)
 - Real-time maze navigation with collectible items
 - Score tracking and timer display
 - Interactive game elements and visual feedback
+- Different Difficulty Levels
+  *Easy mode gameplay - simple maze navigation*
+  *Medium mode with collectible items and bonuses*
+  *Difficult mode featuring enemies and advanced challenges*
 
-### Theme Selection
-![Theme Carousel](screenshots/theme-selection.PNG)
-- Carousel-style theme browser
-- Preview images for each seasonal theme
-- Easy theme switching with visual feedback
 
 ### Settings Panel
-![Settings Window](screenshots/settings.PNG)
+<img src="screenshots/settings.PNG" width="70%"/>  
 - Color customization grid
 - Music controls
 - User preferences management
 
 ### Help System
-![Help Book Interface](screenshots/help-book.PNG)
+<img src="screenshots/help-book1.PNG" width="49%"/>  
+<img src="screenshots/help-book2.PNG" width="49%"/>  
+<img src="screenshots/help-book3.PNG" width="49%"/>  
+<img src="screenshots/help-book4.PNG" width="49%"/>  
 - Interactive help book with page navigation
 - Detailed gameplay instructions
 - Visual guides for game elements and scoring
 
-### Different Difficulty Levels
-![Easy Mode](screenshots/easy-mode.PNG)
-*Easy mode gameplay - simple maze navigation*
-
-![Medium Mode](screenshots/medium-mode.PNG)
-*Medium mode with collectible items and bonuses*
-
-![Difficult Mode](screenshots/difficult-mode.PNG)
-*Difficult mode featuring enemies and advanced challenges*
-
 ### Rating & Feedback System
-![Rating Interface](screenshots/rating.PNG)
-- Star rating system for user feedback
-- Comment section for suggestions and improvements
-- Built-in feedback collection mechanism
+<img src="screenshots/rating.PNG" width="70%"/>  
+- 5-star rating system  
+- Comment section for suggestions  
+- Built-in feedback collection to improve future versions  
 
 ### About Us Section
-![About Us](screenshots/about-us.PNG)
+<img src="screenshots/about-us.PNG" width="70%"/>  
 - Developer information and project credits
 - Student project showcase from ENSIT
 
 ### Game Results
-![Win Screen](screenshots/win-screen.PNG)
+<img src="screenshots/win-screen1.PNG" width="48%"/>  
+<img src="screenshots/win-screen2.PNG" width="48%"/>  
 *Victory screen with level progression options*
 
-![Lose Screen](screenshots/lose-screen.PNG)
+<img src="screenshots/lose-screen.PNG" width="70%"/>  
 *Game over screen with restart options*
 
-## 🖥️ User Interface Components
+<img src="screenshots/level.PNG" width="70%"/>  
+*Level and progression screen*  
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Modern web browser with JavaScript enabled
@@ -134,7 +132,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - **Restart**: Click restart button
 - **Menu**: Click leave button to return to main menu
 
-## 🎯 Gameplay Tips
+## Gameplay Tips
 
 ### Easy Mode
 - Focus on finding the shortest path to the exit
@@ -152,21 +150,12 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - Balance speed with careful navigation
 - Use collected bonuses strategically
 
-## 🛠️ Technical Features
+## Technical Features
 
 - **Responsive Design**: Works on desktop and mobile devices
 - **Multiple Themes**: Dynamic background changes
-- **Save System**: Maintains user preferences and progress
 - **Audio System**: Background music with user controls
 - **Animation System**: Smooth transitions and visual effects
-- **Modular Architecture**: Organized code structure for maintainability
-
-## 🌟 Rating & Feedback
-
-The game includes a built-in rating system where players can:
-- Rate the game with a 5-star system
-- Provide written feedback and suggestions
-- Help improve future versions
 
 ---
 
