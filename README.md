@@ -53,7 +53,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 <p align="center">
 <table>
   <tr>
-    <td>
+    <td width="50%">
       <ul>
         <li>Avatar selection gallery</li>
         <li>Username customization</li>
@@ -100,7 +100,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 <p align="center">
 <table>
   <tr>
-    <td>
+    <td width="50%">
       <ul>
         <li>Color customization grid</li>
         <li>Music controls</li>
@@ -133,7 +133,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 <p align="center">
 <table>
   <tr>
-    <td>
+    <td width="50%">
       <ul>
         <li>5-star rating system</li>
         <li>Comment section for suggestions</li>
@@ -150,7 +150,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 ### About Us Section
 <table>
   <tr>
-    <td>
+    <td width="50%">
       <ul>
         <li>Developer information and project credits</li>
         <li>Student project showcase from ENSIT</li>
@@ -171,7 +171,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 <table>
   <tr>
-    <td>
+    <td width="50%">
        <ul>
         <li>Game over screen with restart options</li>
        </ul>
