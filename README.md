@@ -148,7 +148,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 </p>
 
 ### About Us Section
-<p align="center">
 <table>
   <tr>
     <td>
@@ -162,7 +161,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
     </td>
   </tr>
 </table>
-</p>
 
 ### Game Results
 *Victory screen with level progression options.*
@@ -174,7 +172,9 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 <table>
   <tr>
     <td>
-      <p>*Game over screen with restart options*</p>
+       <ul>
+        <li>Game over screen with restart options</li>
+       </ul>
     </td>
     <td>
       <img src="screenshots/lose-screen.PNG" width="100%"/>
@@ -182,7 +182,9 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   </tr>
   <tr>
     <td>
-      <p>*Level and progression screen*</p>
+     <ul>
+        <li>Level and progression screen</li>
+      </ul>
     </td>
     <td>
       <img src="screenshots/level.PNG" width="100%"/>
