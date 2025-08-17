@@ -24,18 +24,16 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 <p align="center">
 <table>
   <tr>
-    <td align="center">🍂<br>Autumn</td>
-    <td align="center">🌸<br>Spring</td>
-    <td align="center">☀️<br>Summer</td>
+    <td align="center">🍂 Autumn</td>
+    <td align="center">🌸 Spring</td>
+    <td align="center">☀️ Summer</td>
+    <td align="center">❄️ Winter</td>
   </tr>
   <tr>
-    <td align="center">❄️<br>Winter</td>
-    <td align="center">🎄<br>Christmas</td>
-    <td align="center">🎊<br>New Year</td>
-  </tr>
-  <tr>
-    <td align="center">🎃<br>Halloween</td>
-    <td align="center">🪔<br>Diwali</td>
+    <td align="center">🎄 Christmas</td>
+    <td align="center">🎊 New Year</td>
+    <td align="center">🎃 Halloween</td>
+    <td align="center">🪔 Diwali</td>
     <td></td>
   </tr>
 </table>
