@@ -2,6 +2,8 @@
 
 A captivating web-based maze game featuring multiple difficulty levels, seasonal themes, and engaging gameplay mechanics. Navigate through challenging mazes while collecting treasures and avoiding obstacles!
 
+🌐 **Play the game online:** [Maze World Game](https://rihabcherni.github.io/maze-world-game/)
+
 ## Game Features
 
 ### Difficulty Levels
