@@ -47,12 +47,12 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ### Loading Screen
 <p align="center">
-  <img src="screenshots/loading.PNG" width="70%"/>
+  <img src="screenshots/loading.PNG" width="60%"/>
 </p>
 
 ### User Profile & Login
 <p align="center">
-  <img src="screenshots/login.PNG" width="70%"/>
+  <img src="screenshots/login.PNG" width="60%"/>
 </p>  
 
 - Avatar selection gallery  
@@ -71,7 +71,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ### Main Menu & Navigation
 <p align="center">
-  <img src="screenshots/menu.PNG" width="70%"/>
+  <img src="screenshots/menu.PNG" width="60%"/>
 </p>
 
 ### Game Controls & Gameplay
@@ -90,7 +90,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ### Settings Panel
 <p align="center">
-  <img src="screenshots/settings.PNG" width="70%"/>
+  <img src="screenshots/settings.PNG" width="60%"/>
 </p>
 
 - Color customization grid  
@@ -114,7 +114,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ### Rating & Feedback System
 <p align="center">
-  <img src="screenshots/rating.PNG" width="70%"/>
+  <img src="screenshots/rating.PNG" width="60%"/>
 </p>  
 
 - 5-star rating system  
@@ -123,7 +123,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ### About Us Section
 <p align="center">
-  <img src="screenshots/about-us.PNG" width="70%"/>
+  <img src="screenshots/about-us.PNG" width="60%"/>
 </p>  
 
 - Developer information and project credits  
