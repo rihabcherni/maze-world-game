@@ -27,8 +27,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
     <td align="center">🌸 Spring</td>
     <td align="center">☀️ Summer</td>
     <td align="center">❄️ Winter</td>
-  </tr>
-  <tr>
     <td align="center">🎄 Christmas</td>
     <td align="center">🎊 New Year</td>
     <td align="center">🎃 Halloween</td>
@@ -177,8 +175,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
        </ul>
       <img src="screenshots/lose-screen.PNG" width="100%"/>
     </td>
-  </tr>
-  <tr>
     <td>
      <ul>
         <li>Level and progression screen</li>
