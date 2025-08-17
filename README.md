@@ -21,7 +21,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ## Themes & Customization
 
-<p align="center">
 <table>
   <tr>
     <td align="center">🍂 Autumn</td>
@@ -34,10 +33,9 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
     <td align="center">🎊 New Year</td>
     <td align="center">🎃 Halloween</td>
     <td align="center">🪔 Diwali</td>
-    <td></td>
   </tr>
 </table>
-</p>
+
 - **Avatar Selection**: Choose from 8 different avatars
 - **Color Schemes**: 12 different UI color options
 - **Background Music**: Toggle game soundtrack on/off
