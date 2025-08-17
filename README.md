@@ -5,9 +5,9 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 ## Game Features
 
 ### Difficulty Levels
-- **Easy**: Simple maze navigation - find your way to the exit
-- **Medium**: Navigate mazes while collecting bonus items and avoiding penalties
-- **Difficult**: Advanced gameplay with moving enemies and complex challenges
+- **Easy**: Simple maze navigation — find your way to the exit.
+- **Medium**: Navigate mazes while collecting bonus items and avoiding penalties.
+- **Difficult**: Advanced gameplay with moving enemies and complex challenges.
 
 ### Game Elements
 - **Collectible Items**:
@@ -36,15 +36,15 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   </tr>
 </table>
 
-- **Avatar Selection**: Choose from 8 different avatars
-- **Color Schemes**: 12 different UI color options
-- **Background Music**: Toggle game soundtrack on/off
-- **Personalization**: Custom player names
+- **Avatar Selection**: Choose from 8 different avatars.
+- **Color Schemes**: 12 UI color options.
+- **Background Music**: Toggle game soundtrack on/off.
+- **Personalization**: Custom player names.
 
 ## Game Screenshots
 
 ### Loading Screen
-*Initial loading screen with game branding*
+*Initial loading screen with game branding.*
 <p align="center">
   <img src="screenshots/loading.PNG" width="60%"/>
 </p>
@@ -61,7 +61,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       </ul>
     </td>
     <td>
-      <img src="screenshots/login.PNG" width="60%"/>
+      <img src="screenshots/login.PNG" width="100%"/>
     </td>
   </tr>
 </table>
@@ -73,12 +73,12 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   <img src="screenshots/theme-selection2.PNG" width="48%"/>
 </p>  
 
-- Carousel-style theme browser  
-- Preview images for each seasonal theme  
-- Easy theme switching  
+- Carousel-style theme browser.
+- Preview images for each seasonal theme.
+- Easy theme switching.
 
 ### Main Menu & Navigation
-*Main menu with difficulty selection and navigation options* 
+*Main menu with difficulty selection and navigation options.* 
 <p align="center">
   <img src="screenshots/menu.PNG" width="60%"/>
 </p>
@@ -89,16 +89,14 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   <img src="screenshots/difficult-mode.PNG" width="48%"/>
 </p>  
 
-- **Play/Pause**: Pause and resume gameplay  
-- **Restart**: Reset current level  
-- **Leave**: Exit to main menu  
-- **Timer Display**: Shows remaining time and level progress  
-- Real-time maze navigation with collectible items  
-- Score tracking and timer display  
-- Interactive game elements and visual feedback  
+- **Play/Pause**: Pause and resume gameplay.  
+- **Restart**: Reset current level.  
+- **Leave**: Exit to main menu.  
+- **Timer Display**: Shows remaining time and level progress.  
+- Real-time maze navigation with collectible items.  
+- Score tracking and interactive visual feedback.
 
 ### Settings Panel
-
 <p align="center">
 <table>
   <tr>
@@ -110,7 +108,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       </ul>
     </td>
     <td>
-      <img src="screenshots/settings.PNG" width="60%"/>
+      <img src="screenshots/settings.PNG" width="100%"/>
     </td>
   </tr>
 </table>
@@ -127,12 +125,12 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   <img src="screenshots/help-book4.PNG" width="48%"/>
 </p>  
 
-- Interactive help book with page navigation  
-- Detailed gameplay instructions  
-- Visual guides for game elements and scoring  
+- Interactive help book with page navigation.  
+- Detailed gameplay instructions.  
+- Visual guides for game elements and scoring.
 
 ### Rating & Feedback System
-
+<p align="center">
 <table>
   <tr>
     <td>
@@ -143,13 +141,13 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       </ul>
     </td>
     <td>
-      <img src="screenshots/rating.PNG"/>
+      <img src="screenshots/rating.PNG" width="100%"/>
     </td>
   </tr>
 </table>
+</p>
 
 ### About Us Section
-
 <p align="center">
 <table>
   <tr>
@@ -160,16 +158,15 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       </ul>
     </td>
     <td>
-      <img src="screenshots/about-us.PNG" width="60%"/>
+      <img src="screenshots/about-us.PNG" width="100%"/>
     </td>
   </tr>
 </table>
 </p>
 
 ### Game Results
-
-*Victory screen with level progression options*
-<p>
+*Victory screen with level progression options.*
+<p align="center">
   <img src="screenshots/win-screen1.PNG" width="48%"/>
   <img src="screenshots/win-screen2.PNG" width="48%"/>
 </p>  
@@ -180,7 +177,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       <p>*Game over screen with restart options*</p>
     </td>
     <td>
-      <img src="screenshots/lose-screen.PNG"/>
+      <img src="screenshots/lose-screen.PNG" width="100%"/>
     </td>
   </tr>
   <tr>
@@ -188,7 +185,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       <p>*Level and progression screen*</p>
     </td>
     <td>
-      <img src="screenshots/level.PNG"/>
+      <img src="screenshots/level.PNG" width="100%"/>
     </td>
   </tr>
 </table>
@@ -196,21 +193,21 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 ---
 
 ## Prerequisites
-- Modern web browser with JavaScript enabled  
-- No additional installations required  
+- Modern web browser with JavaScript enabled.
+- No additional installations required.
 
 ## Running the Game
-1. Open `index.html` in your web browser  
-2. Wait for the loading screen to complete  
-3. Choose your avatar and enter your name (optional)  
-4. Select a difficulty level to start playing  
-5. Use arrow keys or WASD to navigate the maze  
+1. Open `index.html` in your web browser.  
+2. Wait for the loading screen to complete.  
+3. Choose your avatar and enter your name (optional).  
+4. Select a difficulty level to start playing.  
+5. Use arrow keys or WASD to navigate the maze.
 
 ## Game Controls
-- **Movement**: Arrow keys or WASD  
-- **Pause**: Click pause button or press Space  
-- **Restart**: Click restart button  
-- **Menu**: Click leave button to return to main menu  
+- **Movement**: Arrow keys or WASD.  
+- **Pause**: Click pause button or press Space.  
+- **Restart**: Click restart button.  
+- **Menu**: Click leave button to return to main menu.
 
 ---
 
