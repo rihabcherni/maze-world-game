@@ -21,17 +21,25 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ## Themes & Customization
 
-### Available Themes
-- 🍂 Autumn
-- 🌸 Spring  
-- ☀️ Summer
-- ❄️ Winter
-- 🎄 Christmas
-- 🎊 New Year
-- 🎃 Halloween
-- 🪔 Diwali
-
-### Customization Options
+<p align="center">
+<table>
+  <tr>
+    <td align="center">🍂<br>Autumn</td>
+    <td align="center">🌸<br>Spring</td>
+    <td align="center">☀️<br>Summer</td>
+  </tr>
+  <tr>
+    <td align="center">❄️<br>Winter</td>
+    <td align="center">🎄<br>Christmas</td>
+    <td align="center">🎊<br>New Year</td>
+  </tr>
+  <tr>
+    <td align="center">🎃<br>Halloween</td>
+    <td align="center">🪔<br>Diwali</td>
+    <td></td>
+  </tr>
+</table>
+</p>
 - **Avatar Selection**: Choose from 8 different avatars
 - **Color Schemes**: 12 different UI color options
 - **Background Music**: Toggle game soundtrack on/off
@@ -124,35 +132,34 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - Student project showcase from ENSIT  
 
 ### Game Results
+*Victory screen with level progression options*
 <p align="center">
   <img src="screenshots/win-screen1.PNG" width="48%"/>
   <img src="screenshots/win-screen2.PNG" width="48%"/>
 </p>  
-
+*Game over screen with restart options*
 <p align="center">
-  <img src="screenshots/lose-screen.PNG" width="70%"/>
+  <img src="screenshots/lose-screen.PNG" width="48%"/>
 </p>  
-
+*Level and progression screen*
 <p align="center">
-  <img src="screenshots/level.PNG" width="70%"/>
+  <img src="screenshots/level.PNG" width="48%"/>
 </p>  
 
 ---
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 - Modern web browser with JavaScript enabled  
 - No additional installations required  
 
-### Running the Game
+## Running the Game
 1. Open `index.html` in your web browser  
 2. Wait for the loading screen to complete  
 3. Choose your avatar and enter your name (optional)  
 4. Select a difficulty level to start playing  
 5. Use arrow keys or WASD to navigate the maze  
 
-### Game Controls
+## Game Controls
 - **Movement**: Arrow keys or WASD  
 - **Pause**: Click pause button or press Space  
 - **Restart**: Click restart button  
