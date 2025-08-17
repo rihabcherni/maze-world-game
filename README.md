@@ -130,19 +130,16 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - Student project showcase from ENSIT  
 
 ### Game Results
+
 *Victory screen with level progression options*
-<p align="center">
   <img src="screenshots/win-screen1.PNG" width="48%"/>
   <img src="screenshots/win-screen2.PNG" width="48%"/>
-</p>  
+
 *Game over screen with restart options*
-<p align="center">
   <img src="screenshots/lose-screen.PNG" width="48%"/>
-</p>  
+  
 *Level and progression screen*
-<p align="center">
   <img src="screenshots/level.PNG" width="48%"/>
-</p>  
 
 ---
 
