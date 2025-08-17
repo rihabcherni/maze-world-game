@@ -133,7 +133,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 
 ### Rating & Feedback System
 
-<p align="center">
 <table>
   <tr>
     <td>
@@ -144,11 +143,10 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       </ul>
     </td>
     <td>
-      <img src="screenshots/rating.PNG" width="60%"/>
+      <img src="screenshots/rating.PNG"/>
     </td>
   </tr>
 </table>
-</p>  
 
 ### About Us Section
 
@@ -176,14 +174,13 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   <img src="screenshots/win-screen2.PNG" width="48%"/>
 </p>  
 
-<p align="center">
 <table>
   <tr>
     <td>
       <p>*Game over screen with restart options*</p>
     </td>
     <td>
-      <img src="screenshots/lose-screen.PNG" width="48%"/>
+      <img src="screenshots/lose-screen.PNG"/>
     </td>
   </tr>
   <tr>
@@ -191,11 +188,10 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
       <p>*Level and progression screen*</p>
     </td>
     <td>
-      <img src="screenshots/level.PNG" width="48%"/>
+      <img src="screenshots/level.PNG"/>
     </td>
   </tr>
 </table>
-</p>
 
 ---
 
