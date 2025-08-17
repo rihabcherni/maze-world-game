@@ -35,7 +35,6 @@ function imageTheme(theme){
     array =["halloween.jpg", "start-halloween.PNG","end-halloween.PNG","res-halloween.PNG"] ;
   }
   document.getElementById("startImage").innerHTML= start+array[1];
-  document.getElementById("startImage2").innerHTML= win+array[3];
   document.getElementById("endImage").innerHTML= end+array[2];
   document.getElementById('result-img').src=win+array[3];
   AnimatedBackground(theme);

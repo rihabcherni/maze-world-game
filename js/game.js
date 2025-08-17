@@ -130,8 +130,6 @@ function AfficherMatrice(Matrice,nbLig , nbCol){
                     var src="";
                     if(Matrice[i][j]=="start-img"){//start
                         src =document.getElementById('startImage').textContent;  
-                    }else if(Matrice[i][j]=="start2-img"){//start2
-                        src =document.getElementById('startImage2').textContent; 
                     }else if(Matrice[i][j]=="end-img"){ //end
                         src =document.getElementById('endImage').textContent;  
                     }else if(Matrice[i][j]=="gold5"){ // "gold5"
