@@ -9,6 +9,20 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - **Medium**: Navigate mazes while collecting bonus items and avoiding penalties.
 - **Difficult**: Advanced gameplay with moving enemies and complex challenges.
 
+## Technical Features
+- **Responsive Design**: Works on desktop and mobile.
+- **Multiple Themes**: Dynamic seasonal backgrounds.
+- **Save System**: Maintains preferences and progress.
+- **Audio & Animation**: Background music, smooth transitions, visual effects.
+- **Modular Architecture**: Clean, maintainable code.
+
+## Maze & Game Mechanics
+- **Maze Generation**: Recursive partitioning algorithm ensures solvable and complex mazes.
+- **Item Placement**: Randomly distributed treasures, penalties, and mystery items.
+- **Player Movement**: Supports dual-player controls, collision detection, and real-time scoring.
+- **Enemy AI**: Random movement with collision avoidance in difficult mode.
+- **Timer & Scoring**: Countdown timer, dynamic scoring, bonus effects.
+
 ### Game Elements
 - **Collectible Items**:
   - 🏆 Treasure chests: +5 gold coins
@@ -20,7 +34,6 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - **Scoring System**: Based on steps taken and remaining time
 
 ## Themes & Customization
-
 <table>
   <tr>
     <td align="center">🍂 Autumn</td>
@@ -170,13 +183,13 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 <table>
   <tr>
     <td width="50%">
-       <ul>
+      <ul>
         <li>Game over screen with restart options</li>
-       </ul>
+      </ul>
       <img src="screenshots/lose-screen.PNG" width="100%"/>
     </td>
     <td>
-     <ul>
+      <ul>
         <li>Level and progression screen</li>
       </ul>
       <img src="screenshots/level.PNG" width="100%"/>
