@@ -46,18 +46,28 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 ## Game Screenshots
 
 ### Loading Screen
+*Initial loading screen with game branding*
 <p align="center">
   <img src="screenshots/loading.PNG" width="60%"/>
 </p>
 
 ### User Profile & Login
 <p align="center">
-  <img src="screenshots/login.PNG" width="60%"/>
-</p>  
-
-- Avatar selection gallery  
-- Username customization  
-- Profile management  
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>Avatar selection gallery</li>
+        <li>Username customization</li>
+        <li>Profile management</li>
+      </ul>
+    </td>
+    <td>
+      <img src="screenshots/login.PNG" width="60%"/>
+    </td>
+  </tr>
+</table>
+</p>
 
 ### Theme Selection
 <p align="center">
@@ -70,6 +80,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - Easy theme switching  
 
 ### Main Menu & Navigation
+*Main menu with difficulty selection and navigation options* 
 <p align="center">
   <img src="screenshots/menu.PNG" width="60%"/>
 </p>
@@ -89,13 +100,23 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - Interactive game elements and visual feedback  
 
 ### Settings Panel
-<p align="center">
-  <img src="screenshots/settings.PNG" width="60%"/>
-</p>
 
-- Color customization grid  
-- Music controls  
-- User preferences management  
+<p align="center">
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>Color customization grid</li>
+        <li>Music controls</li>
+        <li>User preferences management</li>
+      </ul>
+    </td>
+    <td>
+      <img src="screenshots/settings.PNG" width="60%"/>
+    </td>
+  </tr>
+</table>
+</p>
 
 ### Help System
 <p align="center">
@@ -113,21 +134,41 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
 - Visual guides for game elements and scoring  
 
 ### Rating & Feedback System
-<p align="center">
-  <img src="screenshots/rating.PNG" width="60%"/>
-</p>  
 
-- 5-star rating system  
-- Comment section for suggestions  
-- Built-in feedback collection to improve future versions  
+<p align="center">
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>5-star rating system</li>
+        <li>Comment section for suggestions</li>
+        <li>Built-in feedback collection to improve future versions</li>
+      </ul>
+    </td>
+    <td>
+      <img src="screenshots/rating.PNG" width="60%"/>
+    </td>
+  </tr>
+</table>
+</p>  
 
 ### About Us Section
-<p align="center">
-  <img src="screenshots/about-us.PNG" width="60%"/>
-</p>  
 
-- Developer information and project credits  
-- Student project showcase from ENSIT  
+<p align="center">
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>Developer information and project credits</li>
+        <li>Student project showcase from ENSIT</li>
+      </ul>
+    </td>
+    <td>
+      <img src="screenshots/about-us.PNG" width="60%"/>
+    </td>
+  </tr>
+</table>
+</p>
 
 ### Game Results
 
@@ -136,14 +177,27 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
   <img src="screenshots/win-screen1.PNG" width="48%"/>
   <img src="screenshots/win-screen2.PNG" width="48%"/>
 </p>  
-*Game over screen with restart options*
-<p>
-  <img src="screenshots/lose-screen.PNG" width="48%"/>
-</p>  
-*Level and progression screen*
-<p>
-  <img src="screenshots/level.PNG" width="48%"/>
-</p>  
+
+<p align="center">
+<table>
+  <tr>
+    <td>
+      <p>*Game over screen with restart options*</p>
+    </td>
+    <td>
+      <img src="screenshots/lose-screen.PNG" width="48%"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>*Level and progression screen*</p>
+    </td>
+    <td>
+      <img src="screenshots/level.PNG" width="48%"/>
+    </td>
+  </tr>
+</table>
+</p>
 
 ---
 
