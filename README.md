@@ -28,7 +28,7 @@ A captivating web-based maze game featuring multiple difficulty levels, seasonal
     <td align="center">☀️ Summer</td>
     <td align="center">❄️ Winter</td>
     <td align="center">🎄 Christmas</td>
-    <td align="center">🎊 New Year</td>
+    <td align="center">🎊<br> New Year</td>
     <td align="center">🎃 Halloween</td>
     <td align="center">🪔 Diwali</td>
   </tr>
